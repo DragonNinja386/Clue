@@ -7,8 +7,14 @@ public class Player {
   private Info[] lInfo;
   private Info room;
   
-  public Player() {
-    
+  public Player(int w) {
+    wInfo = new Info[w];
+    for (int i = 0; i < wInfo.length; i++) {
+      //wInfo[i] = Info.???
+     //kill me now
+     } 
+    pInfo = new Info[6];
+    pInfo = new Info[9];
    } 
   
   public Info getRoom() {
