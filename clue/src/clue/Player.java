@@ -5,7 +5,8 @@ public class Player {
   private Info[] wInfo;
   private Info[] pInfo;
   private Info[] lInfo;
-  private Info room;
+  private int[] location;
+  private boolean inRoom;
   
   public Player(int w) {
     wInfo = new Info[w];
@@ -15,16 +16,29 @@ public class Player {
      } 
     pInfo = new Info[6];
     pInfo = new Info[9];
+    
+    location = new int[2];
+    
+    inRoom = false;
    } 
   
-  public Info getRoom() {
-    return room;
+  public void toggleRoom() {
+    if (inRoom) 
+      inRoom = false;
+    else
+      inRoom = true;
+   } 
+  
+  public void setLocation(int[] l) {
+    location = l;
+   } 
+  
+  public int[] getLocation() {
+    return location;
    } 
   
   public boolean isInRoom() {
-    if (room != null) 
-      return false;
-    return true;
+    return inRoom;
    } 
   
  } 
