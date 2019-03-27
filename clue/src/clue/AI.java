@@ -105,21 +105,7 @@ public class AI
 				break;
 		*/
 			case 0: //Random - Will randomly make guesses based off info
-				for (int i = 0; i < p.length; i++)
-					if (p[i] == Info.MYSTERY)
-						playerWeight[i] = 1;
-					else
-						playerWeight[i] = 0;
-				for (int i = 0; i < w.length; i++)
-					if (w[i] == Info.MYSTERY)
-						weaponWeight[i] = 1;
-					else
-						weaponWeight[i] = 0;
-				for (int i = 0; i < l.length; i++)
-					if (l[i] == Info.MYSTERY)
-						locationWeight[i] = 1;
-					else
-						locationWeight[i] = 0;
+				
 				break;
 		}
 	}
