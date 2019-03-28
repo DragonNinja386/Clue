@@ -7,5 +7,11 @@ public class Control {
 	public Control() {
 		currentPlayer = 1;
 		gc = new GraphicsControl();
+		
+		displayStartScreen();
+	}
+	
+	private void displayStartScreen() {
+		//Do something with gc
 	}
 }
